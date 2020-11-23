@@ -48,6 +48,47 @@ Syntax highlighted code block
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
+
+// Write data to Firebase
+//var mac = '30:AE:A4:1B:58:A0';
+//// Get a reference to the Firebase database entry at the given key.
+//var dbRef = firebase.database().ref('config/' + mac);
+//// The config object we want to write.
+//var config = {
+  //name: 'Device name',
+  //red: 100,
+  //green: 0,
+  //blue: 100,
+  //brightness: 50,
+//};
+//// Write the config to the database.
+//dbRef
+  //.set(config)
+  //.then(function() {
+    //console.log('Success!');
+  //})
+  //.catch(function(error) {
+    //console.log('Error: ' + error.message);
+  //});
+
+// Read data from Firebase
+// Get a database reference to all config/ keys.
+dbRef = firebase.database().ref('config/');   
+// Set callback to be invoked when a child node is added or changes.
+dbRef.on('child_added', configChanged, dbErrorCallback);    
+dbRef.on('child_changed', configChanged, dbErrorCallback);
+// Callback invoked when database entry is added or changed.
+function configChanged(snapshot) {
+  var key = snapshot.key;
+  var newValue = snapshot.val();
+  console.log('Database entry ' + key + ' changed, new value: ' +
+    newValue);
+}
+// Callback invoked on error.
+function dbErrorCallback(err) {
+  console.log('Error reading database: ' + err.message);
+}
+
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
