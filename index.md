@@ -34,7 +34,8 @@ Syntax highlighted code block
 <script>
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
+  ////var firebaseConfig = {
+    var config = {
     apiKey: "AIzaSyCHQoEswTK8iScog1zSB1TJZY2qzhCAetM",
     authDomain: "abc-machining-dept-ddf69.firebaseapp.com",
     databaseURL: "https://abc-machining-dept-ddf69.firebaseio.com",
