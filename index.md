@@ -49,6 +49,7 @@ Syntax highlighted code block
   firebase.analytics();
 </script>
 
+// https://medium.com/firebase-developers/using-firebase-to-control-your-arduino-project-over-the-web-ba94569d172c
 // Write data to Firebase
 //var mac = '30:AE:A4:1B:58:A0';
 //// Get a reference to the Firebase database entry at the given key.
