@@ -24,6 +24,30 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCHQoEswTK8iScog1zSB1TJZY2qzhCAetM",
+    authDomain: "abc-machining-dept-ddf69.firebaseapp.com",
+    databaseURL: "https://abc-machining-dept-ddf69.firebaseio.com",
+    projectId: "abc-machining-dept-ddf69",
+    storageBucket: "abc-machining-dept-ddf69.appspot.com",
+    messagingSenderId: "112366304898",
+    appId: "1:112366304898:web:5b0559937536079e153e9b",
+    measurementId: "G-H3TMYZ29VV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
