@@ -46,7 +46,8 @@ Syntax highlighted code block
     measurementId: "G-H3TMYZ29VV"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  ////firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(config);
   firebase.analytics();
 </script>
 
